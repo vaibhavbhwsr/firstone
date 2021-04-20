@@ -1,0 +1,4 @@
+//javasript pakages for react
+React    	//it's basically the main library
+ReactDOM	//insert react component in DOM
+Babel		//it is usvually used to jsx code to javascript code

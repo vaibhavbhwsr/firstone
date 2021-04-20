@@ -1,0 +1,97 @@
+							EDx
+
+//Some JavaScript(a event driven language) very basics
+---------
+alert ("Hello World!");
+alert(`Counter is now ${counter}`); // This is same like in python with print(f"msg {var}") but with lil chng //for ``(backtick below esc) and $(dollar sign) like written above and are called template literals} 
+---------
+document.querySelector('h1').innerHTML = 'Goodbye!'; // generally used to manipualte h1 tage having hello in //it. [=== means strict equality in type and value][whereas == means simple equality][ and !== is in not strict //sense]
+document.querySelector('tag')
+document.querySelector('#id').value //or .innerHTML or .onsubmit or .style.color or manymore
+document.querySelector('.class')
+document.querySelectorAll('button').forEach(function(button){ //perametered passed button in function
+                button.onclick = function(){
+                    document.querySelector('#hello').style.color = button.dataset.color;
+                }
+document.querySelector('select').onchange = () =>{	//"() =>" shorthand for function() in javascript
+document.querySelector('#hello').style.color = this.value;// this will be used when select tag has value atri..
+document.addEventListener('DOMContentLoaded',function(){
+document.querySelector('h1').onclick = count //DOM used to load the whole content of html and then this function
+}
+
+}
+//and so many events in javascript
+onclick, onmouseover, onkeydown, onkeyup, onblur, onchange etc
+---------
+//variables are defined using let and const
+---------
+setInterval(count, 1000); //here 1000 is in milisecond which means one sec
+---------
+//Local Storage
+localStorage.getItem(key)
+localStorage.setItem(key, value)
+---------
+console.log('msg',name)
+---------
+JSON
+AJEX							
+
+							UDEMY
+
+Javascript latest learnings : A client side programming language or a event driven language, and it is a object oriented language.
+//DOM ( Document Object Model) : A structured like tree used by browser to understand the working of whole  document like Document -> Html(root element) -> head, title or body, a, p, div etc.
+ Three method of changing elements:
+ 1. by tag name (eg. <h1>)
+ 2. by id name (eg. <p id="text"></p>)
+ 3. by class name (eg. <li class="bullet">)
+
+//Comments in javascript is same like in C++
+ // used for single line comment
+ /* used for multi line comment*/
+
+//Method to output data
+ document.write("we can write here like we use cout/print in C++ ", 5 + 9);
+ or
+ window.alert("write anything here");
+
+//Manipulate Document using getElementById
+ document.getElementById('par').innerHTML = 'Hello Again';
+
+//Variables in javascript is defined using var keyword (no need to asign variable type).
+ for eg:
+ var x = 10;
+ var y = 20;
+ var c = "Result is:";
+ var z = x + y;
+
+// + is used to concatinate string + string or var + string or int + string
+ like:
+ var a = 4;
+ var b = "Hello";
+ var c = a + b;
+ output:
+ 4Hello
+
+//javascript has an additional datatype called object also defined by var
+ var info = {
+                name : 'Jay',
+                surname : 'Soni',
+                Class : 'X'
+            };
+            document.getElementById('ob').innerHTML = info.name +" "+ info.surname;
+
+// some function in javascript.
+ document.getElementById('demo').innerHTML = Math.random(); //Math.random() generates any value random btm 0-1
+ document.getElementById('demo').innerHTML = Math.min(1,5,2,3,6,4,7,2); // generates min value
+ document.getElementById('demo1').innerHTML = Math.max(1,5,2,3,6,4,7,2);// generates max value
+ document.getElementById('demo').innerHTML = Math.round(1.99869);// round decimal no. to nearest integer. Ans 2
+					     Math.floor(1.9); //round to 1
+					     Math.ceil(1.4); //round to 2
+
+//Array in js
+ refer any website like w3schools.com
+ some fun push(),pop(),shift(),unshift(),sort(),reverse(),etc
+ splice(2,0,'firstelem','second element') //2 indicate start point and 0 to not remove any element
+
+//Loops for , for in , while, do-while, break, continue.
+ refer any website like W3school.com

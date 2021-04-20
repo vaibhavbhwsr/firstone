@@ -1,0 +1,39 @@
+{Some basis queries of SQL to remember:It's just very basic for, best learning 
+go on net or in book}
+----------------------------------------
+CREATE TABLE flights (
+	id INTEGERS PRIMARY KEY AUTOINCREMENT,
+	origin TEXT NOT NULL,
+	destination TEXT NOT NULL,
+	duration INTEGER NOT NULL,
+);
+----------------------------------------
+INSERT INTO flights
+	(origin,destination,duration)
+	VALUES ("New York", "London", 415);
+----------------------------------------
+SELECT * FROM flights;
+SELECT origin, destination FROM flights;
+SELECT * FRON flights WHERE id = 3;
+SELECT * FROM flights WHERE origin = "New Your";
+SELECT * FROM flights WHERE origin = "%a%";
+.
+.
+.
+----------------------------------------
+UPDATE flights
+	SET duration = 430
+	WHERE origin = "New York"
+	AND destination = "London";
+----------------------------------------
+DELETE FROM flights WHERE destinatio = "New York";
+----------------------------------------
+{JOIN}
+SELECT first, origin, destination
+	FROM flights JOIN passengers
+ON passengers.flights_id = flight.id;
+----------------------------------------
+{To create INDEX }
+CREATE INDEX name_index ON passengers (last);
+----------------------------------------
+-- is used to make comment in SQL 

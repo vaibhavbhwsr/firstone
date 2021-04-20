@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CheckGrade</title>
+    </head>
+    <body>
+        <form onsubmit = check()>
+            Enter marks : <input type="text" id="value">
+            <input type="submit">
+            <p id="demo"></p>
+        </form>
+        <script type="text/javascript">
+           check = ()=>{
+               var v = document.getElementById('value').value;
+               if( v < 50 ){
+                   document.write('F');
+               }
+               else if (v < 60){
+                   document.write('E');
+               }
+               else if (v < 70){
+                   document.write('D');
+               }
+               else if (v < 80){
+                   document.write('C');
+               }
+               else if (v < 90){
+                   document.write('B');
+               }
+               else if (v <= 100){
+                   document.write('A');
+               }
+               else{
+                   document.write("Sorry! Marks cannot be greater than 100");
+               }
+           }
+        </script>
+    </body>
+</html>
